@@ -52,7 +52,6 @@ def search_key_word_multithreaded():
         threads.append(thread)
         thread.start()
 
-    # Ожидание завершения всех потоков
     for thread in threads:
         thread.join()
 
